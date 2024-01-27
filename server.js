@@ -18,6 +18,7 @@ const def = async (req, res) => {
     res.redirect('home')
 }
 const home = async (req, res) => {
+    console.log(req);
     const userPageNumber = parseInt(req.query.page) || 1;
     const lang = req.query.lang || 'en';
     let articles = []
