@@ -1,0 +1,136 @@
+body {
+    background-color: #f8f9fa;
+    font-family: "Arial", sans-serif;
+  }
+
+  .navbar {
+    background-color: #343a40;
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.2s;
+    height: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40; /* Dark text color */
+  }
+
+  .card-text {
+    color: #555;
+  }
+
+  .btn-primary {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    border-color: #0056b3;
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination-btn-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .pagination-btn {
+    margin: 0 5px;
+  }
+  body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-collapse {
+    background-color: #343a40;
+}
+
+.navbar-collapse .navbar-nav {
+    text-align: center;
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+    padding: 10px;
+}
+
+.navbar-collapse .navbar-nav .nav-item {
+    border-bottom: 1px solid #ffffff26; /* Slightly transparent white border between items */
+}
+
+.navbar-collapse .navbar-nav .nav-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+.navbar-toggler-icon {
+  background-image: url('/img/threel.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}

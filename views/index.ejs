@@ -1,134 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>News App</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <style>
-       body {
-        background-color: #f8f9fa;
-        font-family: "Arial", sans-serif;
-      }
-
-      .navbar {
-        background-color: #343a40;
-      }
-
-      .navbar-brand,
-      .navbar-nav .nav-link {
-        color: white;
-        font-weight: bold;
-      }
-
-      .card {
-        margin-bottom: 20px;
-        border: none;
-        transition: transform 0.2s;
-        height: 100%;
-        position: relative;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .card:hover {
-        transform: scale(1.05);
-      }
-
-      .card-img-top {
-        height: 200px;
-        object-fit: cover;
-        border-bottom: 1px solid #dee2e6;
-        border-radius: 10px 10px 0 0;
-      }
-
-      .card-body {
-        padding: 15px;
-      }
-
-      .card-title {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #343a40; /* Dark text color */
-      }
-
-      .card-text {
-        color: #555;
-      }
-
-      .btn-primary {
-        position: absolute;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #007bff; /* Primary button color */
-        border-color: #007bff;
-      }
-
-      .btn-primary:hover {
-        background-color: #0056b3; /* Darker color on hover */
-        border-color: #0056b3;
-      }
-
-      .pagination-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      .pagination-btn-group {
-        display: flex;
-        align-items: center;
-      }
-
-      .pagination-btn {
-        margin: 0 5px;
-      }
-    </style>
-    </style>
-  </head>
+  <%- include('header') -%>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">News App</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
+    <%- include('nav') -%>
     <div class="container mt-4">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <!-- Repeat the card structure for other items -->
@@ -152,28 +26,8 @@
         <% }) %>
       </div>
     </div>
-
-    <div class="pagination-container">
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
+    <%- include('button') -%>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
