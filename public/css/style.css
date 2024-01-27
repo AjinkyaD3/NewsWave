@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  .navbar {
+    background-color: #00bfff;
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .btn-toolbar {
+    margin-top: 20px;
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination-btn-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .pagination-btn {
+    margin: 0 5px;
+  }
