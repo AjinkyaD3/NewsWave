@@ -1,23 +1,31 @@
 {
-  
-    "version": 2,
-    "builds": [
-      {
-        "src": "./server.js",
-        "use": "@vercel/node"
-      },
-      {
-        "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      },
-      {
-        "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
-      }
-    ]    
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "./server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "rewrites": [
+        {
+          "source": "/api/(.*)",
+          "destination": "/api"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    },
+    {
+      "rewrites": [
+        {
+          "source": "/api/(.*)",
+          "destination": "/api"
+        }
+      ]
+    }
+  ]
+}
