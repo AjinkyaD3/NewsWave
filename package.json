@@ -7,11 +7,14 @@
     "newsapi": "^2.4.1"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "name": "news-app",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "author": "Ajinkya D",
   "license": "ISC",
   "description": ""
