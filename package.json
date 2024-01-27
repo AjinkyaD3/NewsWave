@@ -4,7 +4,8 @@
     "dotenv": "^16.4.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "newsapi": "^2.4.1"
+    "newsapi": "^2.4.1",
+    "nodemon": "^3.0.3"
   },
   "scripts": {
     "start": "node server.js"
