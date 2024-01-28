@@ -10,7 +10,7 @@ const search = async (req, res) => {
     const userPageNumber = parseInt(req.query.page) || 1;
     const lang = req.query.lang || 'en';
     let articles = []
-    console.log(req.query)
+    console.log("path:" + req.path + " page:" + req.query.page + " q:" + req.query.q)
     try {
         articles = await newsapi.v2.everything({
             q: userSearchString,
@@ -20,7 +20,7 @@ const search = async (req, res) => {
 
     } catch (error) {
         console.error('Error:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
+        res.status(500).json({ error: 'Internal Server Error' }).redirect('home');
     }
     res.render(absolutePath, { article: articles });
 }

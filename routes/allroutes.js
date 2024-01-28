@@ -9,7 +9,8 @@ const technology = require("./../controller/technology")
 const science = require("./../controller/science")
 const entertainment = require("./../controller/entertainment")
 const search = require("./../controller/search")
-
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', def);
 app.get('/home', home)
