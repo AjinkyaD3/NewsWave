@@ -10,6 +10,7 @@ const search = async (req, res) => {
     const userPageNumber = parseInt(req.query.page) || 1;
     const lang = req.query.lang || 'en';
     let articles = []
+    console.log(req.query)
     try {
         articles = await newsapi.v2.everything({
             q: userSearchString,
