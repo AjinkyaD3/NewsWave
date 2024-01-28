@@ -2,7 +2,9 @@ const path = require('path');
 const NewsAPI = require('newsapi');
 const apiKey = process.env.API_KEY;
 const newsapi = new NewsAPI(apiKey);
+
 const absolutePath = path.join(__dirname, "..", 'views', 'index');
+
 const entertainment = async (req, res) => {
     const userSearchString = 'entertainment';
     const userPageNumber = parseInt(req.query.page) || 1;
