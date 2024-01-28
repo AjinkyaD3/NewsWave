@@ -16,6 +16,7 @@ const entertainment = async (req, res) => {
             q: userSearchString,
             page: userPageNumber,
             language: lang,
+            "pageSize": 16
 
         });
 

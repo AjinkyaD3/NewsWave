@@ -14,7 +14,10 @@ const home = async (req, res) => {
     try {
         articles = await newsapi.v2.topHeadlines({
             page: userPageNumber,
+            category: "general",
             language: lang,
+            "pageSize": 16,
+            "country": 'in'
 
         });
 

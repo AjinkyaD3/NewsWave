@@ -16,6 +16,7 @@ const search = async (req, res) => {
             q: userSearchString,
             page: userPageNumber,
             language: lang,
+            "pageSize": 16
         });
 
     } catch (error) {
