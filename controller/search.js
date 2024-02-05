@@ -6,7 +6,7 @@ const newsapi = new NewsAPI(apiKey);
 const absolutePath = path.join(__dirname, "..", 'views', 'index');
 
 const search = async (req, res) => {
-    const userSearchString = req.query.q;
+    const userSearchString = req.query.q || "tech";
     const userPageNumber = parseInt(req.query.page) || 1;
     const lang = req.query.lang || 'en';
     let articles = []
